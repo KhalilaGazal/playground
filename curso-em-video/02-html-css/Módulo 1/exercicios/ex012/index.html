@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeos com HTML5</title>
+</head>
+<body>
+  <h1>Inserindo vídeos hospedados localmente</h1>
+  <p>Este vídeo está hospedado no meu próprio servidor.</p>
+  <video width="480" height="480" poster="images/thumbnail.jpg" controls>
+    <source src="media/shy-away-twenty-one-pilots.mp4" type="video/mp4">
+    <source src="media/shy-away-twenty-one-pilots.webm" type="video/webm">
+    <source src="media/shy-away-twenty-one-pilots.ogv" type="video/ogg">
+    <source src="media/shy-away-twenty-one-pilots.m4v" type="video/mp4">
+  </video>
+
+  <h1>Inserindo vídeos do YouTube</h1>
+  <iframe width="854" height="480" src="https://www.youtube.com/embed/Ti2OovLHtlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h1>Inserindo vídeos do Vimeo</h1>
+  <iframe src="https://player.vimeo.com/video/57121863" width="854" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

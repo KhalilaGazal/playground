@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat+Alternates&display=swap');
+
+:root {
+  color: #000;
+  cursor: crosshair;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.nav {
+  background-image: linear-gradient(90deg, rgba(174,215,211,1) 0%, rgba(202,233,228,1) 25%, rgba(202,233,228,1) 50%, rgba(254,196,194,1) 50%, rgba(254,196,194,1) 75%, rgba(233,163,163,1) 100%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.nav-list a,
+.box {
+  border: 1px solid #524948;
+  border-radius: 5px;
+}
+
+.nav-list a,
+.box,
+footer {
+  background-color: #fff199;
+}
+
+.nav {
+  margin: .5em;
+}
+
+.nav-primary {
+  text-align: center;
+}
+
+.logo a {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #fff199, 2px 2px 1px #fff199;
+}
+
+.logo a,
+.banner,
+h1,
+h2,
+h3 {
+  font-family: 'Merienda One', cursive;
+}
+
+.logo a:hover {
+  color: #524948;
+}
+
+a:focus {
+  outline: 2px solid #000;
+}
+
+.nav-list {
+  text-align: center;
+}
+
+.nav-list li {
+  list-style: none;
+  margin: 1em 0 2em 0;
+}
+
+.nav-list a {
+  box-shadow: 1px 1px #524948;
+  padding: .5em 1em;
+}
+
+.nav-list a:hover {
+  box-shadow: none;
+}
+
+.banner {
+  background: url("./../img/banner.jpg") no-repeat center;
+  margin-bottom: 2em;
+  min-height: 250px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px #000;
+  text-transform: uppercase;
+}
+
+.banner h3 {
+  background-color: #000;
+  font-size: 1.3rem;
+  padding: .5em 0;
+}
+
+.banner h2,
+.banner h3 {
+  color: #fff;
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
+.box {
+  padding: 1em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+main h2,
+aside h2 {
+  margin: .5em 0;
+  text-align: center;
+}
+
+main p,
+aside p {
+  padding: 1em 0;
+}
+
+footer {
+  border-top: 1px solid #000;
+  margin-top: 2em;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+footer a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  font-weight: normal;
+  text-decoration: none;
+}

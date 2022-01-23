@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary: #222;
+  --clr-secondary: #03BB85;
+  font-family: sans-serif;
+}
+
+.nav {
+  background-color: var(--clr-primary);
+  color: #fff;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-primary,
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-primary {
+  align-items: center;
+  padding: 1em 1.5em;
+}
+
+.logo a {
+  font-size: 1.6rem;
+}
+
+.logo span,
+.logo a:hover {
+  color: var(--clr-secondary);
+}
+
+.logo a:hover span {
+  color: #fff;
+}
+
+.nav-toggle-btn {
+  background: var(--clr-secondary);
+  border: none;
+  cursor: pointer;
+  height: 3em;
+  width: 3em;
+}
+
+.nav-toggle-btn:hover {
+  opacity: .5;
+}
+
+.logo a:focus,
+.nav-toggle-btn:focus,
+.nav-list a:focus {
+  outline: 2px solid #fff;
+}
+
+.hamburger {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: var(--clr-primary);
+  display: block;
+  height: 3px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav-secondary {
+  display: none;
+}
+
+.nav-visible {
+  display: block;
+}
+
+.nav-list {
+  border-top: 2px solid #fff;
+  flex-direction: column;
+  font-size: 1.2rem;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list a {
+  border-bottom: 2px solid #fff;
+  display: block;
+  padding: 1em 0;
+  width: 100%;
+}
+
+.active,
+.nav-list a:focus,
+.nav-list a:hover {
+  background: var(--clr-secondary);
+}
+
+.active {
+  font-weight: 700;
+}
+
+@media (min-width: 769px) {
+  .nav-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 90%;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-primary {
+    padding: 0;
+  }
+
+  .logo a {
+    font-size: 1.5em;
+  }
+
+  .nav-secondary {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .nav-list,
+  .nav-list a {
+    border: none;
+  }
+
+  .nav-list a {
+    padding: 1em;
+  }
+}

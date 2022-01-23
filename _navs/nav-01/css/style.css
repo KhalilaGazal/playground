@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --clr-black: #0D0D0D;
+  --clr-dark-blue: #024059;
+  --clr-blue: #1C7FA6;
+  --clr-light-blue: #A7D5F2;
+  --clr-white: #EDF1FA;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--clr-white);
+  color: var(--clr-black);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  background: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 2em;
+  width: 90%;
+}
+
+.nav {
+  background: #fff;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.primary-nav,
+.nav-list {
+  align-items: center;
+  display: flex;
+}
+
+.primary-nav {
+  justify-content: space-between;
+  padding: .5em 1em;
+}
+
+.nav-toggle-btn {
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  height: 3em;
+  width: 3em;
+}
+
+.logo:hover,
+.nav-toggle-btn:hover {
+  opacity: .5;
+}
+
+.logo a:focus,
+.nav-toggle-btn:focus,
+.nav-list li a:focus { 
+  outline: 5px solid var(--clr-light-blue);
+}
+
+.hamburger {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: var(--clr-dark-blue);
+  display: block;
+  height: 3px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.secondary-nav {
+  display: none;
+}
+
+.nav-visible {
+  display: block;
+}
+
+.nav-list {
+  border-top: 1px solid var(--clr-light-blue);
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list li {
+  border-bottom: 1px solid var(--clr-light-blue);
+  padding: 1em 0;
+  width: 100%;
+}
+
+.nav-list a {
+  color: var(--clr-dark-blue);
+  display: block;
+  text-decoration: none;
+}
+
+#current,
+.nav-list li:hover {
+  background: var(--clr-light-blue);
+}
+
+@media (min-width: 650px) {
+  .container {
+    width: 70%;
+  }
+  
+  .container-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 90%;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .secondary-nav {
+    display: block;
+    padding: .5em 1em;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .nav-list,
+  .nav-list li {
+    border: none;
+  }
+  
+  #current,
+  .nav-list li:hover,
+  .nav-list a:hover {
+    background: transparent;
+    color: var(--clr-light-blue);
+    text-decoration: var(--clr-light-blue) underline 3px;
+    text-underline-offset: .5em;
+  }
+}

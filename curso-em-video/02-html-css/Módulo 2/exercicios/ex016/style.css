@@ -1,0 +1,40 @@
+/*
+Color Theme Swatches in Hex
+.Travel-1-hex { color: #658CBF; }
+.Travel-2-hex { color: #2A4759; }
+.Travel-3-hex { color: #F2AF5C; }
+.Travel-4-hex { color: #F2D5CE; }
+.Travel-5-hex { color: #D98F8F; }
+*/
+
+@charset "UTF-8";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #F2D5CE, #D98F8F);
+}
+
+main {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 8px 8px 8px #2a475959;
+  margin: auto;
+  padding: 10px;
+  width: 600px;
+}
+
+h1 {
+  color: #F2AF5C;
+  text-shadow: 1px 1px 2px #bb8748;
+}
+
+h2 {
+  color: #2A4759;
+}
+
+p {
+  text-align: justify;
+}

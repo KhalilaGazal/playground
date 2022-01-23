@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.nav {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-primary,
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-primary {
+  align-items: center;
+  padding: 1em 1.5em;
+}
+
+.logo a {
+  font-size: 1.6rem;
+}
+
+.logo span,
+.logo a:hover {
+  color: #fce300;
+}
+
+.logo a:hover span {
+  color: #fff;
+}
+
+.nav-toggle-btn {
+  background: #fce300;
+  border: none;
+  cursor: pointer;
+  height: 3em;
+  width: 3em;
+}
+
+.nav-toggle-btn:hover {
+  opacity: .5;
+}
+
+.logo a:focus,
+.nav-toggle-btn:focus,
+.nav-list a:focus {
+  outline: 2px solid #fff;
+}
+
+.hamburger {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: #000;
+  display: block;
+  height: 3px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav-secondary {
+  display: none;
+}
+
+.nav-visible {
+  display: block;
+}
+
+.nav-list {
+  border-top: 2px solid #fce300;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list a {
+  border-bottom: 2px solid #fce300;
+  display: block;
+  padding: 1em 0;
+  width: 100%;
+}
+
+.active a,
+.nav-list a:focus,
+.nav-list a:hover {
+  background: #fce300;
+  color: #000;
+}
+
+.active {
+  font-weight: 700;
+}
+
+@media (min-width: 650px) {
+  .nav-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 90%;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-primary {
+    padding: 0;
+  }
+
+  .nav-secondary {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-list,
+  .nav-list a {
+    border: none;
+  }
+
+  .nav-list a {
+    padding: 1em;
+  }
+
+  .active a,
+  .nav-list a:focus,
+  .nav-list a:hover {
+    background: #000;
+    color: #fce300;
+    text-decoration: 20px underline #fff;
+    text-underline-offset: .5em;
+  }
+}

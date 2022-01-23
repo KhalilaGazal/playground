@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.parent {
+  background-color: #23424A;
+  margin: 0 auto;
+  padding: 50px;
+  width: 80%;
+}
+
+.child {
+  background-color: #38CFD9;
+  height: 250px;
+  width: 50%;
+}

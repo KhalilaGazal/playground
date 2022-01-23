@@ -1,0 +1,72 @@
+.clearfix {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.banner {
+  padding-top: 4em;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.box {
+  margin: 1em;
+}
+
+@media (min-width: 301px) {
+  .nav::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
+  .nav-container {
+    width: 90%;
+  }
+
+  .nav-primary {
+    float: left;
+  }
+
+  .nav-list {
+    float: right;
+  }
+}
+
+@media (min-width: 601px) {
+  .nav-list li {
+    display: inline-block;
+    margin: 1em .5em;
+  }
+
+  .wrap {
+    width: 90%;
+  }
+
+  main .box {
+    float: left;
+    width: 45%;
+  }
+
+  main::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+@media (min-width: 1001px) {
+  main {
+    float: left;
+    width: 67%;
+  }
+
+  aside .box {
+    float: right;
+    width: 30%;
+  }
+}
