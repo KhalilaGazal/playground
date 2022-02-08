@@ -17,13 +17,41 @@
  <h1>Iniciando estudos DOM</h1> 
  <p>Aqui vai o resultado</p>
  <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
- <div>Clique em mim</div>
+ <div id="msg">Clique em mim</div>
+ <!-- <div name="msg">Clique em mim</div> -->
+ <!-- <div class="msg">Clique em mim</div> -->
 
  <script>
   // window.document.write('Olá, mundo!')
   // window.document.write(window.document.characterSet)
   // window.document.write(window.navigator.appName)
-  window.document.write(window.document.URL)
+  // window.document.write(window.document.URL)
+
+  var corpo = window.document.body
+
+  var p = window.document.getElementsByTagName('p')[1]
+  // window.document.write('Está escrito assim: ' + p.innerText)
+
+  p.style.color = 'black'
+  // corpo.style.background = '#fce300'
+
+  document.write(p.innerHTML)
+  // window.alert(p.innerHTML)
+  // window.alert(p.innerText)
+
+  // var d = window.document.getElementById('msg')
+  // d.style.background = 'green'
+  // d.innerText = 'Estou aguardando...'
+  // window.document.getElementById('msg').innerText = 'Olá'
+
+  // var d = window.document.getElementsByName('msg')[0]
+  // d.innerText = 'Olá!'
+
+  // var d = window.document.getElementsByClassName('msg')[0]
+  // d.innerText = 'Olá!'
+
+  var d = window.document.querySelector('div#msg')
+  d.innerText = 'Olá!'
  </script>
 </body>
 </html>
