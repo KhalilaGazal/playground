@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1 id="title">Music Survey</h1>
+    <img src="./img/header.png" alt="">
+  </header>
+  <div class="container">
+    <div class="box">
+      <p id="description"><span>Thank you</span> for taking the time to help us improve the platform!</p>
+      <form action="#" id="survey-form">
+        <fieldset class="fieldset-dropdown">
+          <label>
+            <legend>Select how often do you listen to music:</legend>
+            <select id="dropdown" name="dropdown" required>
+              <option value="everyday">Everyday</option>
+              <option value="often">4-6 times per week</option>
+              <option value="casually">1-3 times per week</option>
+              <option value="never">I don't listen to music</option>
+              <option value="impairment">I have hearing impairment</option>
+              <option value="none">Prefer not to say</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="fieldset-genre">
+          <legend>Select your favorite genres:</legend>
+          <label>
+            <input type="checkbox" name="alternative" value="alternative">
+            Alternative
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="classical">
+            Classical
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="country">
+            Country
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="electronic">
+            Electronic
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="folk">
+            Folk
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="hiphop">
+            Hip-hop
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="indie">
+            Indie
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="jazz">
+            Jazz
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="metal">
+            Metal
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="pop">
+            Pop
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="rap">
+            Rap
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="rock">
+            Rock
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="worship">
+            Worship
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="other">
+            Other
+          </label>
+          <label>
+            <input type="checkbox" name="genre" value="none">
+            None
+          </label>
+        </fieldset>
+        <fieldset class="fieldset-radio">
+          <legend>Do you still buy physical media?</legend>
+          <label>
+            <input type="radio" name="radio" value="yes">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="radio" value="no">
+            No
+          </label>
+          <label>
+            <input type="radio" name="radio" value="none">
+            Prefer not to say
+          </label>
+        </fieldset>
+        <fieldset class="fieldset-textarea">
+          <label>
+            <legend>What is your opinion on physical media?</legend>
+            <textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="fieldset-contact">
+          <legend>Contact Info</legend>
+          <label id="name-label">
+            Name:
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </label>
+          <label id="email-label">
+            Email:
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          </label>
+          <label id="number-label">
+            Age <span>(optional)</span>:
+            <input type="number" name="age" id="number" min="0" max="100" placeholder="Age">
+          </label>
+        </fieldset>
+        <div class="btn">
+          <input type="submit" id="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>Developed by <a href="https://github.com/KhalilaGazal" target="_blank">Khalila Gazal</a> for <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">freeCodeCamp</a>. Source code on <a href="https://github.com/khalilagazal/playground/tree/main/freecodecamp/survey-form" target="_blank">GitHub</a>.</p>
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

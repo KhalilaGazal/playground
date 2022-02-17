@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+:root {
+  --clr-blue: hsl(169, 44%, 52%);
+  --clr-dark-blue: hsl(169, 44%, 32%);
+  --clr-grey: hsl(0, 0%, 32%);
+  --clr-pink: hsl(350, 44%, 53%); 
+  font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(0, 0%, 90%);
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 80%;
+}
+
+#header a:focus,
+input[type="submit"]:focus,
+.btn:focus,
+.footer a:focus {
+  outline: 3px solid #000;
+}
+
+#header {
+  background: var(--clr-blue);
+  box-shadow: 0 1px 5px hsl(0, 0%, 65%);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav,
+.nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav,
+.hero > div h2 {
+  text-shadow: 1px 1px 2px #333;
+}
+
+.nav {
+  align-items: center;
+  font-weight: 700;
+  gap: .5em;
+  padding: .5em 0;
+  text-align: center;
+}
+
+#header-img{
+  width: 50px;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  gap: .1em;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  word-spacing: .2em;
+}
+
+.logo span {
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: var(--clr-dark-blue);
+  text-shadow: none;
+}
+
+section,
+main {
+  margin: 2em 0;
+}
+
+h2,
+h3 {
+  color: #000;
+}
+
+.hero > div {
+  margin: 0 auto 3em auto;
+  max-height: 405px;
+  max-width: 720px;
+}
+
+.hero > div h2 {
+  background: var(--clr-pink);
+  color: #fff;
+  padding: .5em 0;
+}
+
+.container-iframe {
+  border: 1px solid #000;
+  border-top: none;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+iframe {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+form {
+  margin: 1em 0 3em 0;
+}
+
+form input {
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="email"] {
+  padding: 1em;
+  width: 80%;
+}
+
+input[type="email"]:focus {
+  outline: 3px solid var(--clr-blue);
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  padding: 1em 2em;
+}
+
+.grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.grid div {
+  flex-basis: 100%;
+}
+
+.icon {
+  padding-bottom: .5em;
+  width: 50px;
+}
+
+.features div:nth-child(2) .icon {
+  width: 63px;
+}
+
+.features p {
+  margin: 1em 0;
+}
+
+.pricing div {
+  align-self: stretch;
+  border: 1px solid var(--clr-grey);
+  box-shadow: 1px 1px 5px #ccc;
+  padding: 1em;
+}
+
+.pricing div:hover {
+  background: hsl(0, 0%, 96%);
+}
+
+.pricing h2 {
+  font-size: 1.3rem;
+  margin: 1em 0 .5em 0;
+}
+
+.pricing h3 {
+  color: var(--clr-pink);
+  margin-bottom: 1em;
+}
+
+.pricing li {
+  margin: .5em 0;
+}
+
+.btn {
+  background: var(--clr-blue);
+  box-shadow: 1px 1px 5px hsl(0, 0%, 60%);
+  color: #000;
+  display: inline-block;
+  font-weight: 700;
+  margin: 2em 0 1em 0;
+  padding: .6em 1.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: var(--clr-dark-blue);
+  box-shadow: none;
+}
+
+.footer {
+  padding: 1em;
+}
+
+.footer li {
+  display: inline;
+  margin: 1em .5em;
+}
+
+.footer a {
+  color: var(--clr-pink);
+}
+
+.footer a:hover {
+  color: var(--clr-blue);
+}
+
+.footer p {
+  margin: .5em 0;
+}
+
+@media (min-width: 769px) {
+  .nav,
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav {
+    gap: 1em;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    gap: 1em;
+  }
+
+  .hero > div {
+    margin-bottom: 6em;
+  }
+
+  form input {
+    display: inline-block;
+    margin: 0 2em;
+  }
+
+  form input[type="email"] {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav-list {
+    gap: 2em;
+  }
+
+  .hero > div {
+    margin-bottom: 6em;
+  }
+
+  .grid div {
+    flex-basis: 30%;
+  }
+}

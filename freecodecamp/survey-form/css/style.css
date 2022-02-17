@@ -1,0 +1,218 @@
+:root {
+  --grey-0: hsl(0, 0%, 9%);
+  --grey-1: hsl(0, 0%, 12%);
+  --purple-0: hsl(280, 60%, 20%);
+  --purple-1: hsl(280, 60%, 40%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--grey-0);
+  color: #fff;
+  cursor: default;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 650px;
+  width: 90%;
+}
+
+.box {
+  background-color: var(--grey-0);
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 1em 0;
+}
+
+::selection {
+  background: var(--purple-0);
+}
+
+header {
+  height: 270px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header img:hover {
+  opacity: .8;
+  transform: scaleX(1.1);
+}
+
+header img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  min-height: 300px;
+}
+
+#title {  
+  display: inline-block;
+  left: 50%;
+  margin: 1em 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 3px 3px #9400D3,
+            6px 6px #4B0082,
+            9px 9px #0F0,
+            12px 12px #00F,
+            15px 15px #FF0,
+            18px 18px #FF7F00,
+            21px 21px #F00;
+            top: 50%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#description {
+  margin-bottom: 1em;
+  padding: 0 1em;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#description span {
+  font-weight: 700;
+}
+
+fieldset {
+  border: none;
+  margin: 1em;
+  padding: .5em 0;
+}
+
+legend {
+  font-weight: 700;
+}
+
+label {
+  cursor: pointer;
+}
+
+select,
+.fieldset-contact input,
+.fieldset-textarea textarea {
+  background: var(--grey-1);
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  padding: 1em;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 4px solid var(--purple-1);
+}
+
+.fieldset-dropdown select {
+  appearance: none;
+  background: url(../img/select.png) no-repeat 95% center;
+  background-color: var(--grey-1);
+  font-size: 1rem;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.fieldset-genre label,
+.fieldset-radio label {
+  display: block;
+}
+
+.fieldset-genre input,
+.fieldset-radio input {
+  margin-right: 1em;
+}
+
+.fieldset-textarea textarea {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.fieldset-contact {
+  border: 3px solid var(--grey-1);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.fieldset-contact legend {
+  font-size: 1.7rem;
+}
+
+.fieldset-contact span {
+  font-size: 1.2rem;
+}
+
+.fieldset-contact input {
+  display: block;
+  font-size: 1rem;
+  margin: .5em 0 2em 0;
+  width: 100%;
+}
+
+.fieldset-contact input[type="text"]:valid,
+.fieldset-contact input[type="email"]:valid {
+  background: url(./../img/tick.png) 95% no-repeat;
+  background-size: 30px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn input {
+  background: var(--purple-1);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: .8em 0;
+  text-transform: uppercase;
+  width: 80%; 
+}
+
+.btn input:focus,
+.btn input:hover {
+  background: var(--purple-0);
+  box-shadow: none;
+}
+
+footer {
+  padding: 3em 1em 2em 1em;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:focus,
+footer a:hover {
+  color: var(--purple-1);
+}
+
+@media (min-width: 600px) {
+  .box {
+    padding: 3em 2em;
+  }
+
+  #title {
+    margin: 1.6em 0 .5em 0;
+  }
+}

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+:root {
+  --black: #070717;
+  --dark-purple: #414059;
+  --light-purple: #7977a6;
+  --purple: #45445d;
+  --white: #fefffe;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./../img/bg.png) var(--dark-purple);
+  color: var(--black);
+	font-family: "Sarabun", sans-serif;
+  font-size: 1.1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+}
+
+a {
+  color: var(--black);
+  font-weight: 700;
+}
+
+a:focus,
+a:hover {
+  background: var(--dark-purple);
+  color: var(--white);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  padding: .5em 0;
+}
+
+ul {
+  padding: .5em;
+}
+
+li {
+  padding: .5em 0;
+}
+
+.box {
+  background: var(--white);
+  color: var(--black);
+}
+
+.btn {
+  margin-bottom: .5em;
+  text-align: right;
+}
+
+#header .box,
+#tribute-info .box {
+  box-shadow: -6px -6px var(--black);
+}
+
+#header h1,
+#header h2 {
+  letter-spacing: .1em;
+}
+
+#header {
+  background: var(--purple);
+  border-bottom: .3em solid var(--white);
+  color: var(--white);
+  padding-top: 1.5em;
+  text-align: center;
+}
+
+#header .box {
+  margin: 1em 0 1.5em 0;
+  padding: 1em .5em;
+}
+
+#title {
+  color: var(--white);
+  font-size: 2.2rem;
+  text-shadow: -3px 2px var(--black);
+  text-transform: uppercase;
+}
+
+.container-iframe {
+  margin-top: 2em;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.iframe {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+#img-div,
+#tribute-info {
+  margin: 2em 0;
+}
+
+#img-div .box {
+  box-shadow: 6px 6px var(--black);
+}
+
+#image {
+  padding: .5em;
+}
+
+#img-caption {
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+#tribute-info .box {
+  padding: 2em;
+}
+
+#tribute-info p {
+  margin-bottom: 1.3em;
+}
+
+#tribute-link {
+  background: var(--light-purple);
+  border: 2px solid var(--black);
+  color: var(--black);
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+
+#tribute-link:focus,
+#tribute-link:hover {
+  background: var(--dark-purple);
+  transition: 250ms ease;
+}
+
+#footer {
+  background: var(--light-purple);
+  color: var(--black);
+  padding: 1em;
+  text-align: center;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  background: #222;
+  color: #cbc9d7;
+  font-family: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar h1,
+#main-doc h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#navbar a,
+#main-doc a:hover {
+  color: #cbc9d7;
+}
+
+#navbar {
+  height: 300px;
+  overflow-y: auto;
+  text-align: right;
+}
+
+#navbar h1 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#navbar ul,
+#navbar a {
+  border: 1px solid;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  padding: 1em 2em;
+  text-decoration: none;
+  width: 100%;
+}
+
+#navbar a:hover {
+  border: none;
+}
+
+#main-doc {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 60%;
+}
+
+#main-doc section {
+  padding: 2rem 0 1em 0;
+}
+
+#main-doc a {
+  color: #2daadb;
+}
+
+#main-doc ul {
+  padding-left: 3em;
+}
+
+#main-doc li,
+#main-doc p,
+#main-doc code {
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  margin: 1.5em 0;
+}
+
+#main-doc code {
+  background: #333;
+  border-radius: 10px;
+  color: #26ffe2;
+  display: block;
+  font-size: 1.1rem;
+  padding: 1em;
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 380px auto;
+  }
+
+  #navbar {
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    text-align: left;
+  }
+
+  #main-doc {
+    grid-column: 2;
+    margin: 0;
+    width: 80%;
+  }
+}
