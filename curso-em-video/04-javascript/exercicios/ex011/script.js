@@ -7,10 +7,10 @@ function calcular() {
   let media = (nota1 + nota2) / 2
 
   if (media >= 6) {
-    mensagem = '<span class="aprovado">Meus parabéns!</span>'
+    mensagem = '<span class="success">Meus parabéns!</span>'
   }
   else {
-    mensagem = '<span class="reprovado">Estude um pouco mais!</span>'
+    mensagem = '<span class="danger">Estude um pouco mais!</span>'
   }
 
   nota1 = (nota1).toLocaleString('pt-BR')
