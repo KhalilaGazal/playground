@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Serif:wght@600&display=swap');
+
+:root {
+  --white: hsl(240, 60%, 99%);
+  --light-blue: #70cbff;
+  --blue: #004b76;
+  --dark-blue: #00324f;
+  --grey: hsl(247, 10%, 18%);
+  --dark-grey: hsl(247, 12%, 15%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark-grey);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  word-spacing: 3px;
+}
+
+#resultado span {
+  color: var(--light-blue);
+  font-weight: 700;
+}
+
+#resultado .aprovado {
+  background-color: hsl(120, 85%, 13%);
+  color: var(--white);
+}
+
+#resultado .reprovado {
+  background-color: hsl(0, 83%, 19%);
+  color: var(--white);
+}
+
+#resultado mark {
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  color: #000;
+  font-weight: 700;
+  padding: .1em .4em;
+}
+
+.container,
+input,
+button {
+  background-color: var(--grey);
+  border: 2px solid var(--white);
+  border-radius: .5em;
+  color: var(--white);
+}
+
+.container {
+  margin: 3em auto;
+  max-width: 90%;
+  padding: 1em;
+}
+
+.github {
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.btn {
+  text-align: center;
+}
+
+.mt {
+  margin-top: 1em;
+}
+
+section {
+  line-height: 1.5;
+  margin: 1em;
+}
+
+footer {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+img {
+  float: left;
+  margin-right: 1em;
+  max-width: 100%;
+  width: 60px;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Serif', sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+}
+
+a {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+hr {
+  margin-top: 1em;
+}
+
+ul {
+  margin-left: 1em;
+}
+
+li {
+  margin-top: .2em;
+}
+
+p {
+  padding-top: 1em;
+}
+
+form {
+  margin: 1em 0;
+  text-align: center;
+}
+
+input,
+button {
+  font-size: 1.25rem;
+  margin: .2em;
+}
+
+input[type="number"] {
+  padding: .5em 1em;
+  width: 100px;
+}
+
+input[type="number"]:focus,
+input[type="number"]:hover {
+  border: 2px solid var(--blue);
+}
+
+input[type="submit"],
+button {
+  background-color: var(--blue);
+  border: 2px solid var(--white);
+  box-shadow: 1px 1px var(--white);
+  cursor: pointer;
+  padding: .5em 1.5em;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+button:focus,
+button:hover {
+  background-color: var(--dark-blue);
+  border: 2px solid var(--white);
+  box-shadow: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: .2s all;
+}
+
+button {
+  border-radius: .5em;
+  margin-top: 1em;
+}
+
+
+@media (min-width: 600px) {
+  form {
+    text-align: left;
+  }  
+}
+
+@media (min-width: 700px) {
+  .container {
+    padding: 1em 3em;
+  }
+
+  .github {
+    max-width: 90%;
+  }
+
+  input[type="number"] {
+    width: 150px;
+  }  
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 60%;
+  }
+
+  .github {
+    max-width: 70%;
+  }
+}
