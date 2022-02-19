@@ -19,22 +19,27 @@ function sortear() {
 }
 
 function adivinhar() {
-  palpite = window.prompt('Qual é o seu palpite?')
+  palpite = Number(window.prompt('Qual é o seu palpite?').replace(',','.'))
 
-  if (palpite >= min && palpite <= max) {
-    tentativas++
-    if (palpite > sorteio) {
-      resultado.innerHTML += `<p>Você falou <strong>${palpite}</strong>. Meu número é <span>MENOR!</span></p>`
-    }
-    else if (palpite < sorteio) {
-      resultado.innerHTML += `<p>Você falou <strong>${palpite}</strong>. Meu número é <span>MAIOR!</span></p>`
-    }
-    else {
-      resultado.innerHTML += `<p><span>PARABÉNS!</span> Você acertou com <strong>${tentativas}</strong> tentativa(s)! Eu tinha sorteado o valor <mark>${sorteio}</mark>!</p>`
-      btnAdivinhar.style.display = 'none'
-    }
+  if (palpite % 1 != 0 && !isNaN(palpite % 1)) {
+    resultado.innerHTML += `<p>Por favor, digite um número <strong>inteiro</strong>.</p>`
   }
   else {
-    resultado.innerHTML += `<p>Por favor, digite um número entre ${min} e ${max}.</p>`
-  }  
+    if (palpite >= min && palpite <= max) {
+      tentativas++
+      if (palpite > sorteio) {
+        resultado.innerHTML += `<p>Você falou <strong>${palpite}</strong>. Meu número é <span>menor</span>!</p>`
+      }
+      else if (palpite < sorteio) {
+        resultado.innerHTML += `<p>Você falou <strong>${palpite}</strong>. Meu número é <span>MAIOR</span>!</p>`
+      }
+      else {
+        resultado.innerHTML += `<p><span>PARABÉNS</span>! Você acertou com <strong>${tentativas}</strong> tentativa(s)! Eu tinha sorteado o valor <mark>${sorteio}</mark>!</p>`
+        btnAdivinhar.style.display = 'none'
+      }
+    }
+    else {
+      resultado.innerHTML += `<p>Por favor, digite um número entre ${min} e ${max}.</p>`
+    } 
+  }   
 }

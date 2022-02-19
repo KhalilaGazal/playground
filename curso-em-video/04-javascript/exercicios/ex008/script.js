@@ -1,15 +1,15 @@
 function calcular() {
-  let numero = Number(window.prompt('Digite um número:'))
+  let numero = Number(window.prompt('Digite um número:').replace(",", "."))
   let resultado = window.document.getElementById('resultado')
 
-  let absoluto = String(Math.abs(numero)).replace('.', ',')
-  let inteiro = Math.trunc(numero)
-  let inteiroProximo = Math.round(numero)
-  let raizQuadrada = String(Math.sqrt(numero)).replace('.', ',')
-  let raizCubica = String(Math.cbrt(numero)).replace('.', ',')
-  let quadrado = String(Math.pow(numero, 2)).replace('.', ',')
-  let cubico = String(Math.pow(numero, 3)).replace('.', ',')
-  numero = String(numero).replace('.', ',')
+  let absoluto = (Math.abs(numero)).toLocaleString('pt-BR')
+  let inteiro = (Math.trunc(numero)).toLocaleString('pt-BR')
+  let inteiroProximo = (Math.round(numero)).toLocaleString('pt-BR')
+  let raizQuadrada = (Math.sqrt(numero)).toLocaleString('pt-BR')
+  let raizCubica = (Math.cbrt(numero)).toLocaleString('pt-BR')
+  let quadrado = (Math.pow(numero, 2)).toLocaleString('pt-BR')
+  let cubico = (Math.pow(numero, 3)).toLocaleString('pt-BR')
+  numero = (numero).toLocaleString('pt-BR')
 
   resultado.innerHTML = `<p>O número a ser analisado aqui será o <span><strong>${numero}</strong></span>.</p><hr>`
   resultado.innerHTML += `<p>- O seu valor absoluto é ${absoluto}</p>`
