@@ -5,18 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabuada</title>
+  <link rel="stylesheet" href="./../../css/style.css">
 </head>
 <body>
-  <h1>Super Tabuada</h1>
-  <p>Escreva um número na caixa a seguir e te mostrarei a tabuada dele.</p>
-  <form action="#" method="post">
-    <label for="numero">Número:</label>
-    <input type="number" name="numero" id="numero" placeholder="Número:">
-    <input type="submit" value="Tabudada" formaction="javascript:calcular()">
-  </form>
-  <section id="resultado">
-    <p>Preencha os dados acima e aperte o botão.</p>
-  </section>
+  <div class="container">
+    <section>
+      <h1>Super Tabuada</h1>
+      <p>Escreva um número na caixa a seguir e te mostrarei a tabuada dele.</p>
+      <form action="#" method="post">
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" placeholder="6">
+        <input type="submit" value="Tabudada" formaction="javascript:calcular()">
+      </form>
+    </section>
+    <section id="resultado">
+      <p>Preencha os dados acima e aperte o botão.</p>
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

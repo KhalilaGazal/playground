@@ -5,7 +5,7 @@ function contar() {
   let hand = String.fromCodePoint(0x1F449)
   let flag = String.fromCodePoint(0x1F3C1)
 
-  resultado.innerHTML += `<h2>Contando de 0 até ${numero}</h2>`
+  resultado.innerHTML = `<h2>Contando de 0 até ${numero}</h2>`
 
   for (let i = 0; i <= numero; i++) {
     resultado.innerHTML += ` ${i} ${hand} `   

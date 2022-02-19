@@ -5,18 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fatorial</title>
+  <link rel="stylesheet" href="./../../css/style.css">
 </head>
 <body>
-  <h1>Cálculo de Fatorial</h1>
-  <p>Escreva um número (entre 1 e 21) na caixa a seguir e te mostrarei o Fatorial dele.</p>
-  <form action="#" method="get">
-    <label for="numero">Número:</label>
-    <input type="number" name="numero" id="numero" min="1" max="21" placeholder="Número:">
-    <input type="submit" value="Fatorial" formaction="javascript:calcular()">
-  </form>
-  <section id="resultado">
-    <p>Preencha os dados acima e aperte o botão.</p>
-  </section>
+  <div class="container">
+    <section>
+      <h1>Cálculo de Fatorial</h1>
+      <p>Escreva um número (entre <strong>0</strong> e <strong>21</strong>) na caixa a seguir e te mostrarei o fatorial dele.</p>
+      <form action="#" method="get">
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" min="0" max="21" placeholder="5">
+        <input type="submit" value="Calcular Fatorial" formaction="javascript:calcular()">
+      </form>
+    </section>
+    <section id="resultado">
+      <p>Preencha os dados acima e aperte o botão.</p>
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

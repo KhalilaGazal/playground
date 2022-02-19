@@ -11,22 +11,22 @@ function calcular() {
   switch (opcao) {
     case 1:
       calculo = numero1 + numero2
-      mensagem = `${numero1} + ${numero2} = <strong>${calculo}</strong>`
+      mensagem = `<strong>${numero1}</strong> + <strong>${numero2}</strong> = <span>${calculo}</span>`
       break
     case 2:
       calculo = numero1 - numero2
-      mensagem = `${numero1} - ${numero2} = <strong>${calculo}</strong>`
+      mensagem = `<strong>${numero1}</strong> - <strong>${numero2}</strong> = <span>${calculo}</span>`
       break
     case 3:
-      calculo = numero1 * numero2
-      mensagem = `${numero1} x ${numero2} = <strong>${calculo}</strong>`
+      calculo = (numero1 * numero2).toLocaleString('pt-BR')
+      mensagem = `<strong>${numero1}</strong> x <strong>${numero2}</strong> = <span>${calculo}</span>`
       break
     case 4:
       calculo = (numero1 / numero2).toLocaleString('pt-BR')
-      mensagem = `${numero1} / ${numero2} = <strong>${calculo}</strong>`
+      mensagem = `<strong>${numero1}</strong> / <strong>${numero2}</strong> = <span>${calculo}</span>`
       break
     default:
-      mensagem = `OPÇÃO INVÁLIDA! Você digitou ${numero1} e ${numero2}, mas não sei o que fazer com eles. `
+      mensagem = `OPÇÃO INVÁLIDA! Você digitou <strong>${numero1}</strong> e <strong>${numero2}</strong>, mas não sei o que fazer com eles. `
       break
   }
 

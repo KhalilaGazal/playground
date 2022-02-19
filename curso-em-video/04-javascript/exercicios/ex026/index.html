@@ -5,24 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contagem inteligente</title>
+  <link rel="stylesheet" href="./../../css/style.css">
 </head>
 <body>
-  <h1>Contagem "inteligente"</h1>
-  <p>Use qualquer valor nas caixas, simule contagens crescentes e regressivas. Use também valores negativos.</p>
-  <form action="#" method="get">
-    <p>
-      <label for="inicio">Valor inicial:</label>
-      <input type="number" name="inicio" id="inicio" placeholder="Início da contagem">
-    </p>
-    <p>
-      <label for="fim">Valor final:</label>
-      <input type="number" name="fim" id="fim" placeholder="Fim da contagem">
-    </p>
-    <input type="submit" value="Contar" formaction="javascript:contar()">
-  </form>
-  <section id="resultado">
-    <p>Preencha os dados acima e aperte o botão.</p>
-  </section>
+  <div class="container">
+    <section>
+      <h1>Contagem "inteligente"</h1>
+      <p>Use qualquer valor nas caixas, simule contagens crescentes e regressivas. Use também valores negativos.</p>
+      <form action="#" method="get">
+        <div>
+          <label for="inicio">Valor inicial:</label>
+          <input type="number" name="inicio" id="inicio" placeholder="-5">
+        </div>
+        <div class="mt">
+          <label for="fim">Valor final:</label>
+          <input type="number" name="fim" id="fim" placeholder="3">
+        </div>
+        <div class="mt">
+          <input type="submit" value="Contar" formaction="javascript:contar()">
+        </div>
+      </form>
+    </section>
+    <section id="resultado">
+      <p>Preencha os dados acima e aperte o botão.</p>
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

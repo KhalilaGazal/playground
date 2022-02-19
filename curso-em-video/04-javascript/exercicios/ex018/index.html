@@ -5,13 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jogo em JS</title>
+  <link rel="stylesheet" href="./../../css/style.css">
 </head>
 <body onload="sortear()">
-  <h1>Tente adivinhar meu número</h1>
-  <button id="btn" onclick="adivinhar()">Tentar adivinhar</button>
-  <section id="resultado">
-    <p>Já pensei em um valor entre 1 e 100...</p>
-  </section>
+  <div class="container">
+    <section>
+      <h1>Tente adivinhar meu número</h1>
+      <div class="btn">
+        <button id="btn-novo-jogo" onclick="jogarNovamente()">Novo jogo</button>
+        <button id="btn-adivinhar" onclick="adivinhar()">Tentar adivinhar</button>
+      </div>        
+    </section>
+    <section id="resultado">
+      <p>Já pensei em um valor entre <strong>1</strong> e <strong>100</strong>...</p>       
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

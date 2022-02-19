@@ -1,7 +1,7 @@
 function iniciar() {
   let resultado = window.document.getElementById('resultado')
   
-  let mes = window.prompt('Digite o mês em extenso (ex: Setembro):').toLowerCase()
+  let mes = window.prompt('Digite o mês por extenso (ex: Setembro):').toLowerCase()
   let estacao
 
   switch (mes) {
@@ -22,5 +22,5 @@ function iniciar() {
       break
   }
 
-  resultado.innerHTML = `<p>No mês de <mark>${mes.toUpperCase()}</mark>, estamos na estação <mark><strong>${estacao.toUpperCase()}</strong></mark>!</p>`
+  resultado.innerHTML = `<p>No mês de <strong>${mes.toUpperCase()}</strong>, estamos na estação <mark><strong>${estacao.toUpperCase()}</strong></mark>!</p>`
 }

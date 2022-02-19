@@ -5,18 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript Externo</title>
+  <link rel="stylesheet" href="./../../css/style.css">
 </head>
 <body>
-  <h1>JavaScript Externo</h1>
-  <button onclick="acao1()">Ação 1</button>
-  <button onclick="acao2()">Ação 2</button>
-  <button onclick="acao3()">Ação 3</button>
-  <button onclick="acao4()">Ação 4</button>
-
-  <section id="saida">
-    <p>Aqui vou registrar suas ações com os botões acima.</p>
-  </section>
-
-  <script src="acoes.js"></script>
+  <div class="container">
+    <section>
+      <h1>JavaScript Externo</h1>
+      <div class="btn">
+        <button onclick="acao1()">Ação 1</button>
+        <button onclick="acao2()">Ação 2</button>
+        <button onclick="acao3()">Ação 3</button>
+        <button onclick="acao4()">Ação 4</button>
+      </div>
+    </section>
+    <section id="resultado">
+      <p>Aqui vou registrar suas ações com os botões acima.</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

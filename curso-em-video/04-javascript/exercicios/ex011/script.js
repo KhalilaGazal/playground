@@ -4,18 +4,22 @@ function calcular() {
   let nota1 = Number(window.prompt(`Qual foi a primeira nota de ${nome}?`))
   let nota2 = Number(window.prompt(`Além de ${nota1}, qual foi a outra nota de ${nome}?`))
 
-  let media = (nota1 + nota2) / 2
+  let media = ((nota1 + nota2) / 2).toFixed(1)
   let mensagem
 
   if (media >= 6) {
-    mensagem = '<strong style="color:green;">Meus parabéns!</strong>'
+    mensagem = '<span class="aprovado">Meus parabéns!</span>'
   }
   else {
-    mensagem = '<strong style="color:red;">Estude um pouco mais!</strong>'
+    mensagem = '<span class="reprovado">Estude um pouco mais!</span>'
   }
 
-  resultado.innerHTML = `<p>Calculando a média final de <mark>${nome}</mark>.</p>`
-  resultado.innerHTML += `<p>As notas obtidas foram <mark>${nota1} e ${nota2}</mark>.</p>`
+  media = String(media).replace('.', ',')
+  nota1 = String(nota1).replace('.', ',')
+  nota2 = String(nota2).replace('.', ',')
+
+  resultado.innerHTML = `<p>Calculando a média final de <mark>${nome}</mark></p>`
+  resultado.innerHTML += `<p>As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark>.</p>`
   resultado.innerHTML += `<p>A média final será <mark>${media}</mark>.</p>`
   resultado.innerHTML += `<p>A mensagem que temos é: ${mensagem}</p>`
 }

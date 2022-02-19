@@ -10,5 +10,5 @@ function iniciar() {
     mensagem = 'ÍMPAR'
   }
 
-  resultado.innerHTML = `<p>O número ${numero} que foi digitado é <strong>${mensagem}</strong>!</p>`
+  resultado.innerHTML = `<p>O número <strong>${numero}</strong> que foi digitado é <span>${mensagem}</span>!</p>`
 }

@@ -6,7 +6,7 @@ function contar() {
   let hand = String.fromCodePoint(0x1F449)
   let flag = String.fromCodePoint(0x1F3C1)
 
-  resultado.innerHTML += `<h2>Contando de ${inicio} até ${fim}</h2>`
+  resultado.innerHTML = `<h2>Contando de ${inicio} até ${fim}</h2>`
 
   if (inicio < fim) {
     for (let i = inicio; i <= fim; i++) {
@@ -19,7 +19,7 @@ function contar() {
     }
   }
   else {
-    resultado.innerHTML+= 'Não é possível contar, pois os números são iguais '
+    resultado.innerHTML += 'Não é possível contar, pois os números são iguais '
   }
 
   resultado.innerHTML += `${flag}`

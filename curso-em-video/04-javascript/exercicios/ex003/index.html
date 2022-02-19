@@ -5,20 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dados com JS</title>
-  <style>
-    body {
-      font: 12pt Arial;
-    }
-
-    button {
-      font-size: 12pt;
-      padding: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="./../../css/style.css">
 </head>
 <body>
-  <h1>Trabalhando com dados v1.0</h1>
-  <button onclick="inicio()">Clique para começar</button>
+  <div class="container">
+    <section>
+      <h1>Trabalhando com dados v1.0</h1>
+      <div class="btn">
+        <button onclick="inicio()">Clique para começar</button>
+      </div>
+    </section>
+  </div>
   <script>
     function inicio() {
       let nome = window.prompt('Qual é o seu nome?')

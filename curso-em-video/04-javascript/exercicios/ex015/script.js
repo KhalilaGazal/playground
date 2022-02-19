@@ -10,8 +10,8 @@ function analisar() {
   let minutos = data.getMinutes()
   let segundos = data.getSeconds()
 
-  let meses = new Array('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez')
-  let diasSemana = new Array ('Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb')
+  let meses = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+  let diasSemana = new Array ('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado')
 
   resultado.innerHTML = `<p>Dia: <mark>${dia}</mark></p>`
   resultado.innerHTML += `<p>Mês: <mark>${meses[mes]}</mark></p>`

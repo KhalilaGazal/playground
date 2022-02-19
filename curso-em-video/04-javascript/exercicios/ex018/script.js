@@ -1,24 +1,40 @@
 let resultado = window.document.getElementById('resultado')
-let sorteio = 0, palpite = 0
+let btnNovoJogo = window.document.getElementById('btn-novo-jogo')
+let btnAdivinhar = window.document.getElementById('btn-adivinhar')
+let sorteio = 0, palpite = 0, tentativas = 0
+let min = 1, max = 100
 
-function sortear() {
-  let min = 1
-  let max = 100
+function jogarNovamente() {
+  tentativas = 0
+  sortear()
+  btnAdivinhar.style.display = 'inline-block'
+  resultado.innerHTML = `<p>Já pensei em um valor entre <strong>1</strong> e <strong>100</strong>...</p>`
+
+  console.log(sorteio)
+  console.log(tentativas)
+}
+
+function sortear() {  
   sorteio = Math.trunc(Math.random() * (max - min) + min)
 }
 
 function adivinhar() {
   palpite = window.prompt('Qual é o seu palpite?')
 
-  if (palpite > sorteio) {
-    resultado.innerHTML += `<p>Você falou ${palpite}. Meu número é <strong>MENOR!</strong></p>`
-  }
-  else if (palpite < sorteio) {
-    resultado.innerHTML += `<p>Você falou ${palpite}. Meu número é <strong>MAIOR!</strong></p>`
-
+  if (palpite >= min && palpite <= max) {
+    tentativas++
+    if (palpite > sorteio) {
+      resultado.innerHTML += `<p>Você falou <strong>${palpite}</strong>. Meu número é <span>MENOR!</span></p>`
+    }
+    else if (palpite < sorteio) {
+      resultado.innerHTML += `<p>Você falou <strong>${palpite}</strong>. Meu número é <span>MAIOR!</span></p>`
+    }
+    else {
+      resultado.innerHTML += `<p><span>PARABÉNS!</span> Você acertou com <strong>${tentativas}</strong> tentativa(s)! Eu tinha sorteado o valor <mark>${sorteio}</mark>!</p>`
+      btnAdivinhar.style.display = 'none'
+    }
   }
   else {
-    resultado.innerHTML += `<p><strong>PARABÉNS!</strong> Você acertou! Eu tinha sorteado o valor ${sorteio}!</p>`
-    document.getElementById('btn').style.visibility = 'hidden'
-  }
+    resultado.innerHTML += `<p>Por favor, digite um número entre ${min} e ${max}.</p>`
+  }  
 }
