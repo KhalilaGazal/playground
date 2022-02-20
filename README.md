@@ -12,6 +12,14 @@
     <tbody>
       <tr>
         <td>HTML, CSS, JavaScript</td>
+        <td>Curso em Vídeo - <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1/" target="_blank">JavaScript e ECMAScript para Iniciantes</a></td>
+        <td><a href="https://khalilagazal.github.io/playground/curso-em-video/04-javascript/" target="_blank">Live demo</a></td>
+        <td><a href="https://github.com/khalilagazal/playground/tree/main/curso-em-video/04-javascript/" target="_blank">javascript</a></td>
+        <td>Completed</td>    
+        <td>02/2022</td>
+      </tr>
+      <tr>
+        <td>HTML, CSS, JavaScript</td>
         <td>Harvard - <a href="https://cs50.harvard.edu/technology/2017/" target="_blank">CS50’s
   Understanding Technology</a></td>
         <td><a href="https://khalilagazal.github.io/playground/harvard/brazil/" target="_blank">Live demo</a></td>
