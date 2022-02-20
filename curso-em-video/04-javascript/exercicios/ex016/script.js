@@ -7,8 +7,6 @@ function calcular() {
 
   let idade = anoAtual - anoNasc
 
-  console.log(anoAtual)
-
   if (anoNasc % 1 != 0 && !isNaN(anoNasc % 1)) {
     resultado.innerHTML = `<p>Por favor, digite um número <strong>inteiro</strong>.</p>`
   }

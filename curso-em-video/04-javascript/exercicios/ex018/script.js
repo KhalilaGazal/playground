@@ -9,9 +9,6 @@ function jogarNovamente() {
   sortear()
   btnAdivinhar.style.display = 'inline-block'
   resultado.innerHTML = `<p>Já pensei em um valor entre <strong>1</strong> e <strong>100</strong>...</p>`
-
-  console.log(sorteio)
-  console.log(tentativas)
 }
 
 function sortear() {  
