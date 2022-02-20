@@ -27,14 +27,19 @@ body {
   font-weight: 700;
 }
 
-#resultado .aprovado {
+#resultado .success {
   background-color: hsl(120, 85%, 13%);
   color: var(--white);
 }
 
-#resultado .reprovado {
+#resultado .danger {
   background-color: hsl(0, 83%, 19%);
   color: var(--white);
+}
+
+#resultado .warning {
+  background-color: hsl(22, 94%, 57%);
+  color: #000;
 }
 
 #resultado mark {
