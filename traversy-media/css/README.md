@@ -3,8 +3,8 @@
 <ul>
   <li><strong>Live demo</strong>
     <ul>
-      <li><a href="https://khalilagazal.github.io/playground/traversy-media/02-css/mywebsite/" target="_blank">mywebsite</a></li>
-      <li><a href="https://khalilagazal.github.io/playground/traversy-media/02-css/csscheatsheet/" target="_blank">csscheatsheet</a></li>
+      <li><a href="https://khalilagazal.github.io/playground/traversy-media/css/mywebsite/" target="_blank">mywebsite</a></li>
+      <li><a href="https://khalilagazal.github.io/playground/traversy-media/css/csscheatsheet/" target="_blank">csscheatsheet</a></li>
     </ul>
   </li>
 </ul>
