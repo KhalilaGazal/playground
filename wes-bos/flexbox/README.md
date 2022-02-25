@@ -3,6 +3,7 @@
 <ul>
   <li><strong>Live demo</strong>
     <ul>
+      <li><a href="https://khalilagazal.github.io/playground/wes-bos/flexbox/nav/" target="_blank">14 - Flexbox navigation</a></li>
       <li><a href="https://khalilagazal.github.io/playground/wes-bos/flexbox/autoprefixer/" target="_blank">13 - Gulp autoprefixer</a></li>
       <li><a href="https://khalilagazal.github.io/playground/wes-bos/flexbox/flex-basis-wrap/" target="_blank">12 - flex-basis and wrap working together</a></li>
       <li><a href="https://khalilagazal.github.io/playground/wes-bos/flexbox/flex-grow-shrink-basis/" target="_blank">11 - flex-grow, flex-shrink and flex-basis</a></li>
