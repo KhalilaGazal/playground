@@ -1,4 +1,5 @@
 <h1>freeCodeCamp</h1>
+<h3><a href="https://www.freecodecamp.org/certification/khalilagazal/responsive-web-design" target="_blank">Responsive Web Design</a> (10/2021)</h3>
 <ul>
   <li><a href="https://github.com/khalilagazal/playground/tree/main/freecodecamp/portfolio-page" target="_blank">Personal Portfolio</a></li>
   <li><a href="https://github.com/khalilagazal/playground/tree/main/freecodecamp/documentation-page" target="_blank">Technical Documentation Page</a></li>
